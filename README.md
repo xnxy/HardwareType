@@ -23,3 +23,6 @@
 ###### 简书地址：[如何判断设备是否为iPhone X，iOS获取设备型号的方法。](http://www.jianshu.com/p/d40d701889a6)
 
 ------------------
+
+#### 参考资料：
+- [苹果设备类型说明](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
