@@ -15,6 +15,22 @@
 #define kSCREEN_HEIGHT         ([UIScreen mainScreen].bounds.size.height)
 ```
 当然也可以使用 `CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size)`进行判断。但这种方法只能判断`iPhone X`，而像`iPhone 6 plus`、`iPhone 6s Plus`、`iPhone 7 Plus`,`iPhone 8 Plus`其宽高都分别为`414.f`、`736.f`。
+
+```
+/*
+ iPhone 6          w:375  h:667
+ iPhone 6 Plus     w:414  h:736
+ iPhone 6s         w:375  h:667
+ iPhone 6s Plus    w:414  h:736
+ iPhone 7          w:375  h:667
+ iPhone 7 Plus     w:414  h:736
+ iPhone 8          w:375  h:667
+ iPhone 8 Plus     w:414  h:736
+ iPhone SE         w:320  h:568
+ iPhone X          w:375  h:812
+ */
+```
+
 所以我们要获取具体的设备型号的时候可以使用`sys/utsname.h`中的`systemInfo`的`machine`进行判断。
 
 ![.m中的代码](http://upload-images.jianshu.io/upload_images/1388397-f3be3dce72ee1e16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
