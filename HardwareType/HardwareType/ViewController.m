@@ -6,6 +6,9 @@
 //  Copyright © 2017年 dev. All rights reserved.
 //
 
+#define kStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define KISIphoneX (kStatusBarHeight == 20.f?NO:YES)
+
 #import "ViewController.h"
 #import "Utils.h"
 
@@ -21,6 +24,8 @@
     NSLog(@"----------%@-------",[Utils deviceModelName]);
     
     NSLog(@"-----判断是否为iPhone X：%d-----",CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size));
+    
+    NSLog(@"-----statusBarHeight:%f------是否为iPhone X：%d------",kStatusBarHeight,KISIphoneX);
     
 }
 
