@@ -41,5 +41,16 @@
 
 ------------------
 
+------------------
+
+PS :  发现竟然有人看，再次更新下……
+```
+#define kStatusBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define KISIphoneX (kStatusBarHeight == 20.f?NO:YES)
+```
+因为状态栏可以获取，所以我们可以通过判断状态栏的高度，然后确认是否为iPhone X。
+
+------------------
+
 #### 参考资料：
 - [苹果设备类型说明](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
