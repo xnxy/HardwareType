@@ -44,7 +44,7 @@
 
  代码地址：[HardwareType](https://www.theiphonewiki.com/wiki/Models)
  
- 博客地址：[如何判断设备是否为iPhone X，iOS获取设备型号的方法。]( https://xnxy.github.io/2017/10/09/如何判断设备是否为iPhone X，iOS获取设备型号的方法。/)
+ 博客地址：[如何判断设备是否为iPhone X，iOS获取设备型号的方法。](https://xnxy.github.io/2017/10/09/如何判断设备是否为iPhone X，iOS获取设备型号的方法。/)
 
 ------------------
 
