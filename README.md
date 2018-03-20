@@ -8,6 +8,13 @@
 //iPhone X
 #define iPhoneX     (kSCREEN_WIDTH == 375.f && kSCREEN_HEIGHT == 812.f)
 ```
+
+最后修改为：
+
+```
+#define KISIphoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size) || CGSizeEqualToSize(CGSizeMake(812.f, 375.f), [UIScreen mainScreen].bounds.size))
+```
+
  其中`kSCREEN_WIDTH`、`kSCREEN_HEIGHT`分别为：
 
 ```
@@ -37,7 +44,7 @@
 
  代码地址：[HardwareType](https://www.theiphonewiki.com/wiki/Models)
  
- 简书地址：[如何判断设备是否为iPhone X，iOS获取设备型号的方法。](http://www.jianshu.com/p/d40d701889a6)
+ 博客地址：[如何判断设备是否为iPhone X，iOS获取设备型号的方法。]( https://xnxy.github.io/2017/10/09/如何判断设备是否为iPhone X，iOS获取设备型号的方法。/)
 
 ------------------
 
